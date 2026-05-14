@@ -22,7 +22,11 @@ curl -I http://IP_DEL_SERVIDOR
 watch -n 1 "netstat -tn | grep ':80' | wc -l"
 ver el trafico:
 sudo tcpdump -i eth0 port 80 -w captura.pcap
+mpstat
+mpstat 1 10
+mpstat 1 5
 
+nftables
 
 lanzar ataque:
 *
