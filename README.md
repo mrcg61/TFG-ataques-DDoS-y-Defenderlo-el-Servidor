@@ -3,3 +3,6 @@
 Bibliografia:
 Snowris concepto@:
 https://www.cloudflare.com/es-es/learning/ddos/ddos-attack-tools/slowloris/#:~:text=Slowloris%20es%20un%20ataq
+
+ataque real con slowris: 
+https://www.youtube.com/watch?v=QE8lGMLrNpA
