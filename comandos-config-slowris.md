@@ -43,9 +43,12 @@ sudo nano /etc/apache2/mods-enabled/reqtimeout.conf
 RequestReadTimeout header=20-40,MinRate=500
 *limitaciones de conexiones por IP
 sudo apt install libapache2-mod-evasive
+--------
+Docker
+docker run -it --name kali_crypto -v C:\Users\larax\Documents\kalii:/root/kalii kalilinux/kali-rolling bash
 
-
-
+ip: 172.17.0.2
+--------------
 
 
 
