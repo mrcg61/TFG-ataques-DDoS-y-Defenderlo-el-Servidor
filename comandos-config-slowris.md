@@ -47,6 +47,35 @@ sudo apt install libapache2-mod-evasive
 Docker
 docker run -it --name kali_crypto -v C:\Users\larax\Documents\kalii:/root/kalii kalilinux/kali-rolling bash
 
+17/05/2026
+
+DOCKER ENTRAR A MI KALI
+docker run -it --name kali_crypto -v C:\Users\larax\Documents\kalii:/root/kalii kalilinux/kali-rolling bash
+
+
+docker inspect d1114c1a4e17
+
+desde cero----------------------------------------------------
+
+docker pull kalilinux/kali-rolling
+
+docker run -it kalilinux/kali-rolling /bin/bash
+
+
+herramientas esenciales:ok
+apt install kali-linux-default -y
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 ip: 172.17.0.2
 --------------
 
