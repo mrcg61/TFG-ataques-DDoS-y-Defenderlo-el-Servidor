@@ -65,7 +65,7 @@ docker run -it kalilinux/kali-rolling /bin/bash
 herramientas esenciales:ok
 apt install kali-linux-default -y
 --------------------------------------------------------------
-
+d
 
 
 
