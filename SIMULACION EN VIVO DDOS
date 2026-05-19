@@ -21,4 +21,19 @@ ssh usuario@maquina3 "./pruebados.sh"
 --------------------------------------------
 PARARLO:      CTRL C
 MANDARLO A SEGUNDO PLANO:    nohup ./pruebados.sh &
+-----------------------------------------------------
+GRAFANA PARA RECIBIR ALERTAS:
+----------
+NOTIFICACION POR CORREO ELECTRONICO  ( GMAIL )
+nano /etc/grafana/grafana.ini
+
+[smtp]
+enabled = true
+host = smtp.gmail.com:587
+user = TU_CORREO@gmail.com
+password = TU_PASSWORD_O_APP_PASSWORD
+skip_verify = true
+from_address = TU_CORREO@gmail.com
+from_name = Grafana
+----------------------------------------------------
 
