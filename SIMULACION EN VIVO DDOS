@@ -35,5 +35,7 @@ password = TU_PASSWORD_O_APP_PASSWORD
 skip_verify = true
 from_address = TU_CORREO@gmail.com
 from_name = Grafana
+
+REINICIAMOS EL GRAFANA:        systemctl restart grafana-server
 ----------------------------------------------------
 
